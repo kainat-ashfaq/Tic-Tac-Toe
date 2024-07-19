@@ -63,11 +63,11 @@ const checkWinner = () => {
 // show who is winner 
 const showWinner = (winner) => {
   congratulations.innerText = "Congratulations";
-  msg.innerHTML = ` winner is ${winner} `;
+  msg.innerHTML = `winner is ${winner}`;
   turn.innerText = ""
+  new_Game.innerText = "New Game"
   game_board.style.display = "none"
   new_Game.style.display = "block"
-  new_Game.innerText = "New Game"
   resetBtn.style.display = "none"
   thumbs_up.style.display = "block"
   confetti.style.display = "block"
@@ -91,6 +91,7 @@ const checkDraw = ()=>{
             new_Game.style.display = "block"
             resetBtn.style.display = 'none'
             confetti.style.display = "none"
+            thumbs_up.style.display = "none"
 
         }
     }
@@ -119,12 +120,15 @@ enableBox();
 }
 new_Game.addEventListener("click",function(){
   reset()
+  
+  game_Over = false
   game_board.style.display = "block"
   resetBtn.style.display = "block"
   congratulations.innerText = ""
   new_Game.style.display = "none"
   funnyCat.style.display = "none"
   thumbs_up.style.display = "none"
+  confetti.style.display = "none"
 })
 // new_Game.addEventListener("click" , reset)
 resetBtn.addEventListener("click" , reset)

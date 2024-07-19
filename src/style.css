@@ -215,7 +215,8 @@ input::placeholder {
   margin-top: -4%;
 font-size: 40px;
   color: #bad8b6;
-  text-shadow: 0 0 10px #01352c, 0 0 20px #01352c, 0 0 30px #01352c;}
+  text-shadow: 0 0 10px #01352c, 0 0 20px #01352c, 0 0 30px #01352c;
+}
 .new-game-btn{
  background-color: transparent;
   border: 2px solid white;
@@ -226,7 +227,6 @@ font-size: 40px;
   margin-top: 2%;
   display: none;
   cursor: pointer;
-  display: none;
   color: #bad8b6; 
 }
 .confetti{
@@ -243,9 +243,9 @@ font-size: 40px;
   font-size: 20px;
   text-transform: capitalize;
   margin-top: 5%;
-  /* display: none; */
+
   cursor: pointer;
-  /* display: none; */
+
   color: #bad8b6; 
   margin-left: 4%;
 }
